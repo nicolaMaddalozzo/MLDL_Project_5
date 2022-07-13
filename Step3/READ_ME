@@ -1,0 +1,18 @@
+# READ ME Step 3
+
+There are 2 folder: TRPO e DROPO. 
+
+1) Open a terminal inside the DROPO folder and run dropo.py . You can choose the the agent (TRPO or PPO) to be used for generating the dataset D.
+After, you can specify a specific model with a directory. Otherwise a default model is used. 
+You can specify on which environment generate the data. But, from the DROPO point of view, only the target has sense in this case.
+Also the number of steps could be choose,
+
+2) When the algorithm converge, take the output (mu star and sigma star) and write it (by hand) inside the custom_hopper.py inside the TRPO folder -> env folder, line 63,64.65.
+   Here, put the mean and standard deviations. 
+
+ATTENTION: DROPO finds 4 mean and 4 standard deviations but you ahve only to use the last 3 (Torso Mass is not sampled).
+
+
+3) Now, run the TRPO as described in step1 -> TRPO -> READ_ME
+
+
