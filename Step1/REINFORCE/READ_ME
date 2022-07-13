@@ -1,0 +1,19 @@
+# READ ME REINFORCE with baseline step 1
+
+With this folder we can run the algorithm REINFORCE with baseline. In order to do this the steps are:
+
+1) Training phase. Open a terminal in this folder and compile the "reinf.py" file. There are some hyperparameters that you can specify before to run this file,
+   use the command "--help" for more information. 
+   command: python3 reinf.py --help
+   For choosing an environment on which make the training, modify the file reinf.py (line 175-176)
+   
+2) After the hyperparameters are choosen, you can run this file. You have to specify each parameter with --name_parameter value_parameter
+
+3) When it finishes the training, in the folder "results", there will be a folder with the result of the training. Pay attenction to the name of the folder associated 
+with the new result because it doesn't change automatically.  The name contains information about the hyperparameter choosen. In the folder associated with the training,
+there is the model associated with the total number of episode. This  model is contained in the folder "model".  The folder "logs" contains a csv file with the results of 
+the training. The folder "graph" contains a graph that represents the training.
+
+4) For testing the model associated with a training, you have to run "test.py". You have to put the directory of the model ("name_model_n-episodes.mdl") associated with the
+total number of episodes (in the name of the model) as parameter: python3 test.py --model
+Use the command --help for more information. For choosing the env on which making a test, you have to change it inside the test.py file. 
