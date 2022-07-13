@@ -1,0 +1,10 @@
+# READ ME TRPO step 2
+
+The instructions are the same of the READ_ME of TRPO of step 1. The only different thing is the fact that
+in this case the values of the dynamic parameters thigh, leg and foot change for every episode.
+
+In order to apply this, custom_hopper.py was modified. 
+If you want to change the bounds of the uniform distributions, open the custom_hopper.py file and go to line 39. This file in inside the folder env. 
+Torso is not sampled. 
+
+After, for training and test the TRPO with UDR, follow the READ_ME of TRPO in step 1. 
